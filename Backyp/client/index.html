@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      name="description"
+      content="Cybrige Solutions provides modern, industry-ready cybersecurity training, ethical hacking, SOC analyst, GRC, and Blue/Red Team programs."
+    />
+    <title>Cybrige Solutions | Cybersecurity Training</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container nav-content">
+        <div class="logo">
+          <span class="logo-mark">C</span>
+          <div class="logo-text">
+            <span class="logo-title">Cybrige Solutions</span>
+            <span class="logo-subtitle">Cybersecurity Training</span>
+          </div>
+        </div>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About Us</a>
+          <a href="#training" class="nav-link">Training</a>
+          <a href="#verify" class="nav-link">Verify Certificate</a>
+          <a href="#contact" class="nav-link">Contact Us</a>
+        </nav>
+        <button class="btn btn-outline nav-auth-btn" id="openAuthModalBtn">
+          Login / Signup
+        </button>
+        <button class="nav-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero / Home -->
+      <section id="home" class="section hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="eyebrow">Cybersecurity Education • Hands-On Labs • Real-World Skills</p>
+            <h1>
+              Empowering the Next Generation of
+              <span class="gradient-text">Cybersecurity Professionals</span>
+            </h1>
+            <p class="hero-subtitle">
+              Cybrige Solutions delivers industry-aligned training, practical simulations, and expert-led programs
+              designed to prepare you for real-world cyber defense and offense.
+            </p>
+            <div class="hero-actions">
+              <a href="#training" class="btn btn-primary">Explore Training</a>
+              <button class="btn btn-ghost" id="heroAuthBtn">Login / Signup</button>
+            </div>
+            <div class="hero-highlights">
+              <div class="highlight-item">
+                <span class="highlight-number">10+</span>
+                <span class="highlight-label">Specialized Modules</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-number">100%</span>
+                <span class="highlight-label">Practical Focus</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-number">24/7</span>
+                <span class="highlight-label">Secure LMS Access</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="glass-card radar-card">
+              <div class="radar-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="radar-body">
+                <div class="radar-grid"></div>
+                <div class="radar-sweep"></div>
+                <div class="radar-node node-1"></div>
+                <div class="radar-node node-2"></div>
+                <div class="radar-node node-3"></div>
+              </div>
+              <div class="radar-footer">
+                <div class="status-pill status-ok">Threat Surface: Monitored</div>
+                <div class="status-pill status-alert">Incidents: 0 Critical</div>
+              </div>
+            </div>
+            <div class="glass-card hero-stats">
+              <div class="stat-row">
+                <span>Live Labs</span>
+                <span class="badge badge-green">Enabled</span>
+              </div>
+              <div class="stat-row">
+                <span>Adaptive Learning Path</span>
+                <span class="badge badge-blue">Personalized</span>
+              </div>
+              <div class="stat-row">
+                <span>Certificate Verification</span>
+                <span class="badge badge-purple">Instant</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section">
+        <div class="container section-header">
+          <h2>About <span class="gradient-text">Cybrige Solutions</span></h2>
+          <p class="section-subtitle">
+            We bridge the gap between theory and real-world cybersecurity operations.
+          </p>
+        </div>
+        <div class="container about-grid">
+          <div class="about-card glass-card">
+            <h3>Our Mission</h3>
+            <p>
+              To democratize access to world-class cybersecurity education and equip learners with practical skills to
+              defend, detect, and respond to evolving digital threats.
+            </p>
+            <p>
+              Every Cybrige program is built with input from security leaders, SOC analysts, penetration testers, and
+              compliance experts.
+            </p>
+          </div>
+          <div class="about-card glass-card">
+            <h3>Our Vision</h3>
+            <p>
+              A global community of cyber professionals who can anticipate threats, design resilient systems, and
+              protect critical infrastructure.
+            </p>
+            <ul class="pill-list">
+              <li>Hands-on virtual labs</li>
+              <li>Mentor-led learning</li>
+              <li>Real SOC-style scenarios</li>
+              <li>Industry-recognized certifications</li>
+            </ul>
+          </div>
+          <div class="about-card glass-card">
+            <h3>Industry Readiness</h3>
+            <p>
+              Our curriculum maps to real job roles such as SOC Analyst, Ethical Hacker, GRC Specialist, and Blue/Red
+              Team Operator.
+            </p>
+            <p>
+              Students graduate with portfolios, report writing experience, and the confidence to operate in production
+              environments.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Training -->
+      <section id="training" class="section">
+        <div class="container section-header">
+          <h2>Cybersecurity <span class="gradient-text">Training Programs</span></h2>
+          <p class="section-subtitle">
+            Curated learning paths designed to take you from fundamentals to advanced offensive and defensive
+            operations.
+          </p>
+        </div>
+        <div class="container courses-grid" id="coursesGrid">
+          <!-- Course cards injected by JS; fallback static cards below -->
+        </div>
+        <div class="container training-footer">
+          <div class="card-note">
+            <h3>Student Dashboard & Video Labs</h3>
+            <p>
+              Once logged in, you’ll unlock your personalized dashboard with progress tracking, secure video-based
+              modules, downloadable resources, and completion certificates.
+            </p>
+            <ul class="pill-list inline">
+              <li>Secure video streaming</li>
+              <li>Module-based navigation</li>
+              <li>Quizzes & knowledge checks (ready to extend)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Verify Certificate -->
+      <section id="verify" class="section">
+        <div class="container section-header">
+          <h2>Verify <span class="gradient-text">Certificate Authenticity</span></h2>
+          <p class="section-subtitle">
+            Instantly validate the authenticity of Cybrige Solutions training certificates.
+          </p>
+        </div>
+        <div class="container verify-grid">
+          <form id="verifyForm" class="glass-card verify-card">
+            <label for="certificateId" class="form-label">Certificate ID</label>
+            <input
+              type="text"
+              id="certificateId"
+              name="certificateId"
+              class="input"
+              placeholder="e.g., CYB-2025-ABC123"
+              required
+            />
+            <button type="submit" class="btn btn-primary full-width">Verify Certificate</button>
+            <p class="form-hint">
+              Enter the unique Certificate ID printed on the student’s credential.
+            </p>
+          </form>
+          <div id="verifyResult" class="glass-card verify-result" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <div class="container section-header">
+          <h2>Contact <span class="gradient-text">Cybrige Solutions</span></h2>
+          <p class="section-subtitle">
+            Partner with us for corporate upskilling, university programs, or individual learner tracks.
+          </p>
+        </div>
+        <div class="container contact-grid">
+          <form id="contactForm" class="glass-card contact-card">
+            <label for="contactName" class="form-label">Name</label>
+            <input
+              type="text"
+              id="contactName"
+              name="name"
+              class="input"
+              placeholder="Your full name"
+              required
+            />
+
+            <label for="contactEmail" class="form-label">Email</label>
+            <input
+              type="email"
+              id="contactEmail"
+              name="email"
+              class="input"
+              placeholder="you@example.com"
+              required
+            />
+
+            <label for="contactMessage" class="form-label">Message</label>
+            <textarea
+              id="contactMessage"
+              name="message"
+              class="input textarea"
+              rows="4"
+              placeholder="Tell us about your training needs..."
+              required
+            ></textarea>
+
+            <button type="submit" class="btn btn-primary full-width">Send Message</button>
+            <p class="form-hint">
+              We usually respond within one business day.
+            </p>
+          </form>
+          <div class="glass-card contact-info">
+            <h3>Company Details</h3>
+            <p>
+              For enterprise engagements, campus programs, or collaborations, reach out to our partnerships team.
+            </p>
+            <ul class="info-list">
+              <li>
+                <span class="info-label">Email</span>
+                <span class="info-value">contact@cybrigesolutions.com</span>
+              </li>
+              <li>
+                <span class="info-label">Phone</span>
+                <span class="info-value">+1 (555) 012-3456</span>
+              </li>
+              <li>
+                <span class="info-label">Location</span>
+                <span class="info-value">Global • Remote-first</span>
+              </li>
+            </ul>
+            <div class="social-links">
+              <a href="#" aria-label="LinkedIn">in</a>
+              <a href="#" aria-label="GitHub">gh</a>
+              <a href="#" aria-label="Twitter / X">x</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="logo footer-logo">
+            <span class="logo-mark">C</span>
+            <div class="logo-text">
+              <span class="logo-title">Cybrige Solutions</span>
+              <span class="logo-subtitle">Cybersecurity Training</span>
+            </div>
+          </div>
+          <p class="footer-text">
+            Building cyber-resilient professionals and organizations through immersive, hands-on training.
+          </p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#training">Training</a></li>
+            <li><a href="#verify">Verify Certificate</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Student Portal</h4>
+          <p class="footer-text">
+            Access your courses, progress, and certificates through the secure student dashboard.
+          </p>
+          <button class="btn btn-outline footer-auth-btn" id="footerAuthBtn">
+            Login / Signup
+          </button>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container footer-bottom-content">
+          <span>© <span id="year"></span> Cybrige Solutions. All rights reserved.</span>
+          <span class="footer-tagline">Secure. Train. Verify.</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Auth Modal -->
+    <div class="modal-backdrop" id="authModal">
+      <div class="modal">
+        <button class="modal-close" id="closeAuthModalBtn" aria-label="Close authentication modal">×</button>
+        <div class="modal-tabs">
+          <button class="modal-tab active" data-tab="login">Login</button>
+          <button class="modal-tab" data-tab="signup">Signup</button>
+        </div>
+        <div class="modal-body">
+          <form id="loginForm" class="auth-form" data-tab-content="login">
+            <label for="loginEmail" class="form-label">Email</label>
+            <input
+              type="email"
+              id="loginEmail"
+              name="email"
+              class="input"
+              placeholder="you@example.com"
+              required
+            />
+            <label for="loginPassword" class="form-label">Password</label>
+            <input
+              type="password"
+              id="loginPassword"
+              name="password"
+              class="input"
+              placeholder="••••••••"
+              minlength="6"
+              required
+            />
+            <button type="submit" class="btn btn-primary full-width">Login</button>
+            <p class="form-hint small">
+              By logging in you agree to our acceptable use and privacy policies.
+            </p>
+            <p id="loginMessage" class="form-message" aria-live="polite"></p>
+          </form>
+
+          <form id="signupForm" class="auth-form hidden" data-tab-content="signup">
+            <label for="signupName" class="form-label">Full Name</label>
+            <input
+              type="text"
+              id="signupName"
+              name="fullName"
+              class="input"
+              placeholder="Your full name"
+              required
+            />
+            <label for="signupEmail" class="form-label">Email</label>
+            <input
+              type="email"
+              id="signupEmail"
+              name="email"
+              class="input"
+              placeholder="you@example.com"
+              required
+            />
+            <label for="signupPassword" class="form-label">Password</label>
+            <input
+              type="password"
+              id="signupPassword"
+              name="password"
+              class="input"
+              placeholder="Minimum 6 characters"
+              minlength="6"
+              required
+            />
+            <button type="submit" class="btn btn-primary full-width">Create Account</button>
+            <p class="form-hint small">
+              Passwords are encrypted and never stored in plain text.
+            </p>
+            <p id="signupMessage" class="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Student Dashboard (shown when logged in) -->
+    <section id="dashboard" class="dashboard hidden">
+      <div class="container dashboard-inner">
+        <div class="dashboard-header">
+          <h2>Student Dashboard</h2>
+          <p>Your active cybersecurity courses and video training modules.</p>
+          <div class="dashboard-user" id="dashboardUser"></div>
+          <button class="btn btn-outline btn-small" id="logoutBtn">Logout</button>
+        </div>
+        <div class="dashboard-grid">
+          <div class="glass-card dashboard-courses">
+            <h3>Your Courses</h3>
+            <p class="small-text">
+              Select a course to load its modules and video content.
+            </p>
+            <div id="dashboardCourses" class="list"></div>
+          </div>
+          <div class="glass-card dashboard-player">
+            <h3>Video Training</h3>
+            <p class="small-text" id="playerHint">
+              Choose a module to begin watching. Access is restricted to authenticated students.
+            </p>
+            <div id="playerMeta" class="player-meta"></div>
+            <video id="videoPlayer" class="video-player" controls preload="none"></video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
+
