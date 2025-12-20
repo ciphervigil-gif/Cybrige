@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cybrige Certified Android Pentester (CCAND) - Live Instructor-Led Training covering mobile threat model, static/dynamic analysis, reversing, and secure coding."
+    />
+    <title>Cybrige Certified Android Pentester (CCAND) | Cybrige Solutions</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .course-content .about-card h3,
+      .course-content .about-card p {
+        color: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Shared Header -->
+    <header class="navbar">
+      <div class="container nav-content">
+        <div class="logo">
+          <span class="logo-mark">C</span>
+          <div class="logo-text">
+            <span class="logo-title">Cybrige Solutions</span>
+            <span class="logo-subtitle">Cybersecurity Training</span>
+          </div>
+        </div>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html" class="nav-link" data-page="home">Home</a>
+          <a href="about.html" class="nav-link" data-page="about">About Us</a>
+          <a href="training.html" class="nav-link" data-page="training">Training</a>
+          <a href="verify.html" class="nav-link" data-page="verify">Verify Certificate</a>
+          <a href="contact.html" class="nav-link" data-page="contact">Contact Us</a>
+        </nav>
+        <button class="btn btn-outline nav-auth-btn" id="openAuthModalBtn">
+          Login / Signup
+        </button>
+        <button class="nav-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Course Header -->
+      <section class="section">
+        <div class="container section-header">
+          <h1>Cybrige Certified Android Pentester <span class="gradient-text">(CCAND)</span></h1>
+          <p class="section-subtitle">
+            Live Instructor-Led Training for Android Mobile Security Testing
+          </p>
+        </div>
+      </section>
+
+      <!-- Course Overview -->
+      <section class="section">
+        <div class="container">
+          <div class="glass-card" style="padding: 2rem;">
+            <h2>Course <span class="gradient-text">Overview</span></h2>
+            <p style="font-size: 1rem; line-height: 1.7; color: var(--text-muted); margin-top: 1rem;">
+              The Cybrige Certified Android Pentester (CCAND) program is designed to equip you with hands-on skills in Android mobile security testing and vulnerability assessment. This comprehensive course covers mobile threat modeling, static and dynamic analysis, reverse engineering, secure coding practices, and real-world exploitation techniques. Learn to identify and exploit Android security flaws through practical, instructor-led sessions that simulate real-world mobile application security scenarios.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Course Content -->
+      <section class="section course-content">
+        <div class="container section-header">
+          <h2>Android Security Course <span class="gradient-text">Content</span></h2>
+        </div>
+        <div class="container about-grid">
+          <div class="about-card glass-card">
+            <h3>Module 01: Introduction to Android Security</h3>
+            <p>
+              Understand Android architecture, security model, components, and common attack vectors in mobile applications.
+            </p>
+          </div>
+          <div class="about-card glass-card">
+            <h3>Module 02: Android Application Structure</h3>
+            <p>
+              Learn Android app components, manifest files, permissions, intents, and how applications are structured.
+            </p>
+          </div>
+          <div class="about-card glass-card">
+            <h3>Module 03: Mobile Threat Modeling</h3>
+            <p>
+              Understand threat modeling specific to mobile applications and identify potential security risks.
+            </p>
+          </div>
+          <div class="about-card glass-card">
+            <h3>Module 04: Static Analysis Fundamentals</h3>
+            <p>
+              Learn techniques for analyzing Android apps without execution, including decompilation and code review.
+            </p>
+          </div>
+          <div class="about-card glass-card">
+            <h3>Module 05: Dynamic Analysis Setup</h3>
+            <p>
+              Set up environments for dynamic analysis including emulators, physical devices, and testing tools.
+            </p>
+          </div>
+          <div class="about-card glass-card">
+            <h3>Module 06: APK Analysis and Decompilation</h3>
+            <p>
+              Master techniques to extract, decompile, and analyze APK files to understand application logic.
+            </p>
+          </div>
+          <div class="about-card glass-card">
+            <h3>Module 07: Reverse Engineering Android Apps</h3>
+            <p>
+              Learn reverse engineering techniques to understand application behavior and discover vulnerabilities.
+            </p>
+          </div>
+          <div class="about-card glass-card">
+            <h3>Module 08: Runtime Manipulation</h3>
+            <p>
+              Use tools like Frida and Xposed to manipulate app behavior at runtime and bypass security controls.
+            </p>
+          </div>
+          <div class="about-card glass-card">
+            <h3>Module 09: Android Permissions and Security</h3>
+            <p>
+              Analyze permission models, identify overprivileged apps, and exploit permission-related vulnerabilities.
+            </p>
+          </div>
+          <div class="about-card glass-card">
+            <h3>Module 10: Insecure Data Storage</h3>
+            <p>
+              Discover and exploit insecure data storage vulnerabilities including SQLite, SharedPreferences, and file storage.
+            </p>
+          </div>
+          <div class="about-card glass-card">
+            <h3>Module 11: Insecure Communication</h3>
+            <p>
+              Test for insecure network communication, SSL/TLS misconfigurations, and certificate pinning bypasses.
+            </p>
+          </div>
+          <div class="about-card glass-card">
+            <h3>Module 12: Code Injection and Obfuscation</h3>
+            <p>
+              Understand code injection attacks, app obfuscation techniques, and methods to bypass protection mechanisms.
+            </p>
+          </div>
+          <div class="about-card glass-card">
+            <h3>Module 13: Root Detection and Bypass</h3>
+            <p>
+              Learn how apps detect root access and techniques to bypass root detection mechanisms.
+            </p>
+          </div>
+          <div class="about-card glass-card">
+            <h3>Module 14: Secure Coding Practices</h3>
+            <p>
+              Understand secure coding practices for Android development and how to identify insecure implementations.
+            </p>
+          </div>
+          <div class="about-card glass-card">
+            <h3>Module 15: Mobile Pentesting Methodology</h3>
+            <p>
+              Learn comprehensive methodology for conducting security assessments of Android applications.
+            </p>
+          </div>
+          <div class="about-card glass-card">
+            <h3>Module 16: Reporting Mobile Security Findings</h3>
+            <p>
+              Learn how to document and report Android security vulnerabilities effectively for stakeholders.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Training Mode -->
+      <section class="section">
+        <div class="container">
+          <div class="glass-card" style="padding: 2rem;">
+            <h2>Training <span class="gradient-text">Mode</span></h2>
+            <div style="margin-top: 1.5rem;">
+              <h3 style="margin-bottom: 0.5rem;">Live Instructor-Led Sessions</h3>
+              <p style="font-size: 1rem; line-height: 1.7; color: var(--text-muted); margin-bottom: 1.5rem;">
+                Interactive live sessions with expert instructors who provide real-time guidance, answer questions, and share industry insights. These sessions allow for immediate feedback and hands-on problem-solving.
+              </p>
+              <h3 style="margin-bottom: 0.5rem;">Hands-on Practical Approach</h3>
+              <p style="font-size: 1rem; line-height: 1.7; color: var(--text-muted);">
+                Learn by doing. Each module includes practical labs and exercises where you'll apply the concepts in realistic Android security testing scenarios. Build your skills through actual mobile penetration testing practices.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Who Should Enroll -->
+      <section class="section">
+        <div class="container section-header">
+          <h2>Who Should <span class="gradient-text">Enroll</span></h2>
+          <p class="section-subtitle">
+            This course is designed for cybersecurity professionals looking to specialize in mobile security.
+          </p>
+        </div>
+        <div class="container about-grid">
+          <div class="about-card glass-card">
+            <h3>Mobile Security Professionals</h3>
+            <p>
+              Security analysts and penetration testers who want to expand their expertise into Android mobile security testing.
+            </p>
+          </div>
+          <div class="about-card glass-card">
+            <h3>Mobile Developers</h3>
+            <p>
+              Android developers looking to understand security vulnerabilities and implement secure coding practices.
+            </p>
+          </div>
+          <div class="about-card glass-card">
+            <h3>Bug Bounty Hunters</h3>
+            <p>
+              Bug bounty hunters looking to discover vulnerabilities in Android mobile applications and services.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certification -->
+      <section class="section">
+        <div class="container">
+          <div class="glass-card" style="padding: 2rem; text-align: center;">
+            <h2>Certification</h2>
+            <div style="margin-top: 1.5rem;">
+              <h3 style="color: var(--accent); margin-bottom: 0.5rem;">Cybrige Certified Android Pentester (CCAND)</h3>
+              <p style="font-size: 1rem; line-height: 1.7; color: var(--text-muted); max-width: 600px; margin: 0 auto;">
+                Upon successful completion of this course, you will receive the industry-relevant Cybrige Certified Android Pentester (CCAND) certification. This certification validates your skills in Android mobile security testing and demonstrates your expertise to employers and clients.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call To Action -->
+      <section class="section">
+        <div class="container" style="text-align: center;">
+          <div class="glass-card" style="padding: 3rem 2rem;">
+            <h2>Ready to Master <span class="gradient-text">Android Security?</span></h2>
+            <p class="section-subtitle" style="margin-top: 1rem; margin-bottom: 2rem;">
+              Join our live instructor-led training and become an expert in Android mobile penetration testing.
+            </p>
+            <a href="javascript:void(0)" class="btn btn-primary" style="font-size: 1.1rem; padding: 0.8rem 2rem;">
+              Enroll Now
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Shared Footer -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="logo footer-logo">
+            <span class="logo-mark">C</span>
+            <div class="logo-text">
+              <span class="logo-title">Cybrige Solutions</span>
+              <span class="logo-subtitle">Cybersecurity Training</span>
+            </div>
+          </div>
+          <p class="footer-text">
+            Building cyber-resilient professionals and organizations through immersive, hands-on training.
+          </p>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul class="footer-links footer-legal">
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="refund.html">Cancellation &amp; Refund Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect With Us</h4>
+          <div class="social-links">
+            <a
+              href="https://www.youtube.com/@cybrige"
+              aria-label="Cybrige Solutions on YouTube"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              YT
+            </a>
+            <a
+              href="https://www.instagram.com/official_cybrige/"
+              aria-label="Cybrige Solutions on Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              IG
+            </a>
+            <a
+              href="https://www.linkedin.com/in/cybrige-solutions/"
+              aria-label="Cybrige Solutions on LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              in
+            </a>
+            <a href="#" aria-label="Cybrige Solutions on X (Twitter)">
+              X
+            </a>
+          </div>
+          <p class="footer-text" style="margin-top: 0.6rem;">
+            Stay connected with Cybrige Solutions for cybersecurity training, updates, and insights.
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container footer-bottom-content">
+          <span>© <span id="year"></span> Cybrige Solutions. All rights reserved.</span>
+          <span class="footer-tagline">Secure. Train. Verify.</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Shared Auth Modal -->
+    <div class="modal-backdrop" id="authModal">
+      <div class="modal">
+        <button class="modal-close" id="closeAuthModalBtn" aria-label="Close authentication modal">×</button>
+        <div class="modal-tabs">
+          <button class="modal-tab active" data-tab="login">Login</button>
+          <button class="modal-tab" data-tab="signup">Signup</button>
+        </div>
+        <div class="modal-body">
+          <form id="loginForm" class="auth-form" data-tab-content="login">
+            <label for="loginEmail" class="form-label">Email</label>
+            <input
+              type="email"
+              id="loginEmail"
+              name="email"
+              class="input"
+              placeholder="you@example.com"
+              required
+            />
+            <label for="loginPassword" class="form-label">Password</label>
+            <input
+              type="password"
+              id="loginPassword"
+              name="password"
+              class="input"
+              placeholder="••••••••"
+              minlength="6"
+              required
+            />
+            <button type="submit" class="btn btn-primary full-width">Login</button>
+            <p class="form-hint small">
+              By logging in you agree to our acceptable use and privacy policies.
+            </p>
+            <p id="loginMessage" class="form-message" aria-live="polite"></p>
+          </form>
+
+          <form id="signupForm" class="auth-form hidden" data-tab-content="signup">
+            <label for="signupName" class="form-label">Full Name</label>
+            <input
+              type="text"
+              id="signupName"
+              name="fullName"
+              class="input"
+              placeholder="Your full name"
+              required
+            />
+            <label for="signupEmail" class="form-label">Email</label>
+            <input
+              type="email"
+              id="signupEmail"
+              name="email"
+              class="input"
+              placeholder="you@example.com"
+              required
+            />
+            <label for="signupPassword" class="form-label">Password</label>
+            <input
+              type="password"
+              id="signupPassword"
+              name="password"
+              class="input"
+              placeholder="Minimum 6 characters"
+              minlength="6"
+              required
+            />
+            <button type="submit" class="btn btn-primary full-width">Create Account</button>
+            <p class="form-hint small">
+              Passwords are encrypted and never stored in plain text.
+            </p>
+            <p id="signupMessage" class="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
