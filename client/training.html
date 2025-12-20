@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Browse Cybrige Solutions' cybersecurity training programs including Ethical Hacking, Penetration Testing, Bug Bounty, Active Directory Security, API Security, and Android Security."
+    />
+    <title>Cybrige Solutions | Training</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Shared Header -->
+    <header class="navbar">
+      <div class="container nav-content">
+        <div class="logo">
+          <span class="logo-mark">C</span>
+          <div class="logo-text">
+            <span class="logo-title">Cybrige Solutions</span>
+            <span class="logo-subtitle">Cybersecurity Training</span>
+          </div>
+        </div>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html" class="nav-link" data-page="home">Home</a>
+          <a href="about.html" class="nav-link" data-page="about">About Us</a>
+          <a href="training.html" class="nav-link" data-page="training">Training</a>
+          <a href="verify.html" class="nav-link" data-page="verify">Verify Certificate</a>
+          <a href="contact.html" class="nav-link" data-page="contact">Contact Us</a>
+        </nav>
+        <button class="btn btn-outline nav-auth-btn" id="openAuthModalBtn">
+          Login / Signup
+        </button>
+        <button class="nav-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Cybersecurity Training Programs -->
+      <section class="section section-compact-bottom">
+        <div class="container section-header">
+          <h2>Cybersecurity <span class="gradient-text">Training Programs</span></h2>
+          <p class="section-subtitle">
+            Curated learning paths designed to take you from fundamentals to advanced offensive and defensive
+            operations.
+          </p>
+        </div>
+        <div class="container courses-grid" id="coursesGrid">
+          <!-- Course cards injected by JS -->
+        </div>
+      </section>
+
+      <!-- Recorded Courses -->
+      <section class="section section-compact-top">
+        <div class="container section-header">
+          <h2>Recorded <span class="gradient-text">Courses</span></h2>
+          <p class="section-subtitle">
+            Self-paced cybersecurity courses with structured video lessons and practical insights.
+          </p>
+        </div>
+        <div class="container recorded-courses-grid">
+          <article class="glass-card recorded-course-card recorded-course-latest">
+            <span class="course-chip">Recorded Course</span>
+            <h3>The Bug Hunter's Recon Methodology</h3>
+            <p class="course-description">
+              A practical, step-by-step recorded course focused on real-world reconnaissance techniques used by bug bounty
+              hunters to identify and map attack surfaces effectively.
+            </p>
+            <div class="recorded-course-features">
+              <span class="feature-pill">🎥 Recorded & Self-Paced</span>
+              <span class="feature-pill">📚 Beginner to Intermediate friendly</span>
+              <span class="feature-pill">♾️ Lifetime access to recordings</span>
+            </div>
+            <div class="course-actions">
+              <a href="javascript:void(0)" class="btn btn-primary">Enroll Now</a>
+            </div>
+          </article>
+          <article class="glass-card recorded-course-card">
+            <span class="course-chip">Recorded Course</span>
+            <h3>Nuclei Automation</h3>
+            <p class="course-description">
+              Learn how to automate vulnerability scanning and reconnaissance
+              using Nuclei templates and workflows for real-world security testing.
+            </p>
+            <div class="recorded-course-features">
+              <span class="feature-pill">🎥 Recorded & Self-Paced</span>
+              <span class="feature-pill">📚 Beginner to Intermediate friendly</span>
+              <span class="feature-pill">♾️ Lifetime access to recordings</span>
+            </div>
+            <div class="course-actions">
+              <a href="javascript:void(0)" class="btn btn-primary">Enroll Now</a>
+            </div>
+          </article>
+          <article class="glass-card recorded-course-card">
+            <span class="course-chip">Recorded Course</span>
+            <h3>Blind XSS MasterClass</h3>
+            <p class="course-description">
+              A focused masterclass on discovering and exploiting Blind XSS
+              vulnerabilities using real-world bug bounty techniques.
+            </p>
+            <div class="recorded-course-features">
+              <span class="feature-pill">🎥 Recorded & Self-Paced</span>
+              <span class="feature-pill">📚 Beginner to Intermediate friendly</span>
+              <span class="feature-pill">♾️ Lifetime access to recordings</span>
+            </div>
+            <div class="course-actions">
+              <a href="javascript:void(0)" class="btn btn-primary">Enroll Now</a>
+            </div>
+          </article>
+          <article class="glass-card recorded-course-card recorded-course-coming-soon">
+            <div class="recorded-course-badge">Coming Soon</div>
+            <span class="course-chip">Recorded Course</span>
+            <h3>Computer Forensics</h3>
+            <p class="course-description">
+              Learn the fundamentals of digital and computer forensics,
+              including evidence collection, analysis, and investigation techniques.
+            </p>
+            <div class="recorded-course-features">
+              <span class="feature-pill">🎥 Recorded & Self-Paced</span>
+              <span class="feature-pill">📚 Beginner to Intermediate friendly</span>
+              <span class="feature-pill">♾️ Lifetime access to recordings</span>
+            </div>
+            <div class="course-actions">
+              <button class="btn btn-primary" disabled>Enroll Now</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Live Training -->
+      <section class="section section-compact-top">
+        <div class="container section-header">
+          <h2>Cybrige Cybersecurity Expert – <span class="gradient-text">Learning Roadmap</span></h2>
+          <p class="section-subtitle">
+            A structured, step-by-step path to become a job-ready cybersecurity professional.
+          </p>
+          <p class="section-subtitle" style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-muted);">
+            Live Instructor-Led Training
+          </p>
+        </div>
+        <div class="container recorded-courses-grid">
+          <article class="glass-card recorded-course-card">
+            <div class="recorded-course-badge">Live Training</div>
+            <span class="course-chip">Live Training</span>
+            <h3>Cybrige Certified Junior Cybersecurity Analyst (CCJCA)</h3>
+            <p class="course-description">
+              Red Team & Blue Team fundamentals with live sessions covering threat landscape, security controls, SOC basics, and vulnerability fundamentals.
+            </p>
+            <div class="recorded-course-features">
+              <span class="feature-pill">🎥 Recorded & Self-Paced</span>
+              <span class="feature-pill">📚 Beginner to Intermediate friendly</span>
+              <span class="feature-pill">♾️ Lifetime access to recordings</span>
+            </div>
+            <div class="course-actions">
+              <a href="javascript:void(0)" class="btn btn-primary">Enroll Now</a>
+            </div>
+          </article>
+          <article class="glass-card recorded-course-card">
+            <div class="recorded-course-badge">Live Training</div>
+            <span class="course-chip">Live Training</span>
+            <h3>Cybrige Certified Web Pentester (CCWP)</h3>
+            <p class="course-description">
+              Web app assessment, OWASP Top 10, recon, exploitation, and reporting through live instructor-led sessions.
+            </p>
+            <div class="recorded-course-features">
+              <span class="feature-pill">🎥 Recorded & Self-Paced</span>
+              <span class="feature-pill">♾️ Lifetime access to recordings</span>
+              <span class="feature-pill">⚡ Advanced Level Training</span>
+            </div>
+            <div class="course-actions">
+              <a href="javascript:void(0)" class="btn btn-primary">Enroll Now</a>
+            </div>
+          </article>
+          <article class="glass-card recorded-course-card">
+            <div class="recorded-course-badge">Live Training</div>
+            <span class="course-chip">Live Training</span>
+            <h3>Cybrige Certified API Pentester (CCAP)</h3>
+            <p class="course-description">
+              API recon, auth/authorization testing, injection, and secure design in live interactive training sessions.
+            </p>
+            <div class="recorded-course-features">
+              <span class="feature-pill">🎥 Recorded & Self-Paced</span>
+              <span class="feature-pill">♾️ Lifetime access to recordings</span>
+              <span class="feature-pill">⚡ Advanced Level Training</span>
+            </div>
+            <div class="course-actions">
+              <a href="javascript:void(0)" class="btn btn-primary">Enroll Now</a>
+            </div>
+          </article>
+          <article class="glass-card recorded-course-card">
+            <div class="recorded-course-badge">Live Training</div>
+            <span class="course-chip">Live Training</span>
+            <h3>Cybrige Certified AI Pentester (CCAIP)</h3>
+            <p class="course-description">
+              AI/ML attack surface, prompt injection, model abuse, and defenses through comprehensive live training.
+            </p>
+            <div class="recorded-course-features">
+              <span class="feature-pill">🎥 Recorded & Self-Paced</span>
+              <span class="feature-pill">♾️ Lifetime access to recordings</span>
+              <span class="feature-pill">⚡ Advanced Level Training</span>
+            </div>
+            <div class="course-actions">
+              <a href="javascript:void(0)" class="btn btn-primary">Enroll Now</a>
+            </div>
+          </article>
+          <article class="glass-card recorded-course-card">
+            <div class="recorded-course-badge">Live Training</div>
+            <span class="course-chip">Live Training</span>
+            <h3>Cybrige Certified Android Pentester (CCAND)</h3>
+            <p class="course-description">
+              Mobile threat model, static/dynamic analysis, reversing, and secure coding in live instructor-led sessions.
+            </p>
+            <div class="recorded-course-features">
+              <span class="feature-pill">🎥 Recorded & Self-Paced</span>
+              <span class="feature-pill">♾️ Lifetime access to recordings</span>
+              <span class="feature-pill">⚡ Advanced Level Training</span>
+            </div>
+            <div class="course-actions">
+              <a href="javascript:void(0)" class="btn btn-primary">Enroll Now</a>
+            </div>
+          </article>
+          <article class="glass-card recorded-course-card">
+            <div class="recorded-course-badge">Live Training</div>
+            <span class="course-chip">Live Training</span>
+            <h3>Cybrige Certified Active Directory Penetration Tester (CCADPT)</h3>
+            <p class="course-description">
+              AD attack paths, privilege escalation, detection, and hardening through hands-on live training sessions.
+            </p>
+            <div class="recorded-course-features">
+              <span class="feature-pill">🎥 Recorded & Self-Paced</span>
+              <span class="feature-pill">♾️ Lifetime access to recordings</span>
+              <span class="feature-pill">⚡ Advanced Level Training</span>
+            </div>
+            <div class="course-actions">
+              <a href="javascript:void(0)" class="btn btn-primary">Enroll Now</a>
+            </div>
+          </article>
+          <article class="glass-card recorded-course-card">
+            <div class="recorded-course-badge">Live Training</div>
+            <span class="course-chip">Live Training</span>
+            <h3>Cybrige Certified Elite Pentester (CCEP)</h3>
+            <p class="course-description">
+              Advanced exploitation, chaining attacks, opsec, and comprehensive reporting in expert-level live sessions.
+            </p>
+            <div class="recorded-course-features">
+              <span class="feature-pill">🎥 Recorded & Self-Paced</span>
+              <span class="feature-pill">♾️ Lifetime access to recordings</span>
+              <span class="feature-pill">⚡ Advanced Level Training</span>
+            </div>
+            <div class="course-actions">
+              <a href="javascript:void(0)" class="btn btn-primary">Enroll Now</a>
+            </div>
+          </article>
+          <article class="glass-card recorded-course-card">
+            <span class="course-chip">Live Training</span>
+            <h3>Cybrige Certified Red Team Expert (CCRTE)</h3>
+            <p class="course-description">
+              Full-spectrum red teaming, adversary emulation, detection evasion, and leadership in comprehensive live training sessions.
+            </p>
+            <div class="recorded-course-features">
+              <span class="feature-pill">⚡ Advanced Level Training</span>
+            </div>
+            <div class="course-actions">
+              <a href="javascript:void(0)" class="btn btn-primary">Enroll Now</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Training Roadmap -->
+      <section class="section roadmap-section">
+        <div class="container section-header">
+          <h2>Cybrige Cybersecurity Expert – <span class="gradient-text">Learning Roadmap</span></h2>
+          <p class="section-subtitle">
+            A structured, step-by-step path to become a job-ready cybersecurity professional.
+          </p>
+        </div>
+        <div class="container roadmap-grid">
+          <div class="roadmap-card" data-tooltip="Foundations: threat landscape, security controls, SOC basics, vulnerability fundamentals.">
+            <div class="roadmap-step">01</div>
+            <div class="roadmap-icon">🛡️</div>
+            <h3>Cybrige Certified Junior Cybersecurity Analyst</h3>
+            <p class="roadmap-cert">CCJCA</p>
+          </div>
+          <div class="roadmap-card" data-tooltip="Web app assessment, OWASP Top 10, recon, exploitation, and reporting.">
+            <div class="roadmap-step">02</div>
+            <div class="roadmap-icon">🌐</div>
+            <h3>Cybrige Certified Web Pentester</h3>
+            <p class="roadmap-cert">CCWP</p>
+          </div>
+          <div class="roadmap-card" data-tooltip="API recon, auth/authorization testing, injection, and secure design.">
+            <div class="roadmap-step">03</div>
+            <div class="roadmap-icon">🔗</div>
+            <h3>Cybrige Certified API Pentester</h3>
+            <p class="roadmap-cert">CCAP</p>
+          </div>
+          <div class="roadmap-card" data-tooltip="AI/ML attack surface, prompt injection, model abuse, and defenses.">
+            <div class="roadmap-step">04</div>
+            <div class="roadmap-icon">🤖</div>
+            <h3>Cybrige Certified AI Pentester</h3>
+            <p class="roadmap-cert">CCAIP</p>
+          </div>
+          <div class="roadmap-card" data-tooltip="Mobile threat model, static/dynamic analysis, reversing, and secure coding.">
+            <div class="roadmap-step">05</div>
+            <div class="roadmap-icon">📱</div>
+            <h3>Cybrige Certified Android Pentester</h3>
+            <p class="roadmap-cert">CCAND</p>
+          </div>
+          <div class="roadmap-card" data-tooltip="AD attack paths, privilege escalation, detection, and hardening.">
+            <div class="roadmap-step">06</div>
+            <div class="roadmap-icon">🗂️</div>
+            <h3>Cybrige Certified Active Directory Penetration Tester</h3>
+            <p class="roadmap-cert">CCADPT</p>
+          </div>
+          <div class="roadmap-card" data-tooltip="Advanced exploitation, chaining attacks, opsec, and comprehensive reporting.">
+            <div class="roadmap-step">07</div>
+            <div class="roadmap-icon">⚡</div>
+            <h3>Cybrige Certified Elite Pentester</h3>
+            <p class="roadmap-cert">CCEP</p>
+          </div>
+          <div class="roadmap-card roadmap-final" data-tooltip="Full-spectrum red teaming, adversary emulation, detection evasion, and leadership.">
+            <div class="roadmap-step">08</div>
+            <div class="roadmap-icon">🏆</div>
+            <h3>Cybrige Certified Red Team Expert</h3>
+            <p class="roadmap-cert">CCRTE</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Student Dashboard -->
+      <section id="dashboard" class="dashboard hidden">
+        <div class="container dashboard-inner">
+          <div class="dashboard-header">
+            <div>
+              <h2>Student Dashboard</h2>
+              <p>Your active cybersecurity courses and video training modules.</p>
+            </div>
+            <div>
+              <div class="dashboard-user" id="dashboardUser"></div>
+              <button class="btn btn-outline btn-small" id="logoutBtn">Logout</button>
+            </div>
+          </div>
+          <div class="dashboard-grid">
+            <div class="glass-card dashboard-courses">
+              <h3>Your Courses</h3>
+              <p class="small-text">
+                Select a course to load its modules and video content.
+              </p>
+              <div id="dashboardCourses" class="list"></div>
+            </div>
+            <div class="glass-card dashboard-player">
+              <h3>Video Training</h3>
+              <p class="small-text" id="playerHint">
+                Choose a module to begin watching. Access is restricted to authenticated students.
+              </p>
+              <div id="playerMeta" class="player-meta"></div>
+              <video id="videoPlayer" class="video-player" controls preload="none"></video>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Shared Footer -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="logo footer-logo">
+            <span class="logo-mark">C</span>
+            <div class="logo-text">
+              <span class="logo-title">Cybrige Solutions</span>
+              <span class="logo-subtitle">Cybersecurity Training</span>
+            </div>
+          </div>
+          <p class="footer-text">
+            Building cyber-resilient professionals and organizations through immersive, hands-on training.
+          </p>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul class="footer-links footer-legal">
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="refund.html">Cancellation &amp; Refund Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect With Us</h4>
+          <div class="social-links">
+            <a
+              href="https://www.youtube.com/@cybrige"
+              aria-label="Cybrige Solutions on YouTube"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              YT
+            </a>
+            <a
+              href="https://www.instagram.com/official_cybrige/"
+              aria-label="Cybrige Solutions on Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              IG
+            </a>
+            <a
+              href="https://www.linkedin.com/in/cybrige-solutions/"
+              aria-label="Cybrige Solutions on LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              in
+            </a>
+            <a href="#" aria-label="Cybrige Solutions on X (Twitter)">
+              X
+            </a>
+          </div>
+          <p class="footer-text" style="margin-top: 0.6rem;">
+            Stay connected with Cybrige Solutions for cybersecurity training, updates, and insights.
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container footer-bottom-content">
+          <span>© <span id="year"></span> Cybrige Solutions. All rights reserved.</span>
+          <span class="footer-tagline">Secure. Train. Verify.</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Shared Auth Modal -->
+    <div class="modal-backdrop" id="authModal">
+      <div class="modal">
+        <button class="modal-close" id="closeAuthModalBtn" aria-label="Close authentication modal">×</button>
+        <div class="modal-tabs">
+          <button class="modal-tab active" data-tab="login">Login</button>
+          <button class="modal-tab" data-tab="signup">Signup</button>
+        </div>
+        <div class="modal-body">
+          <form id="loginForm" class="auth-form" data-tab-content="login">
+            <label for="loginEmail" class="form-label">Email</label>
+            <input
+              type="email"
+              id="loginEmail"
+              name="email"
+              class="input"
+              placeholder="you@example.com"
+              required
+            />
+            <label for="loginPassword" class="form-label">Password</label>
+            <input
+              type="password"
+              id="loginPassword"
+              name="password"
+              class="input"
+              placeholder="••••••••"
+              minlength="6"
+              required
+            />
+            <button type="submit" class="btn btn-primary full-width">Login</button>
+            <p class="form-hint small">
+              By logging in you agree to our acceptable use and privacy policies.
+            </p>
+            <p id="loginMessage" class="form-message" aria-live="polite"></p>
+          </form>
+
+          <form id="signupForm" class="auth-form hidden" data-tab-content="signup">
+            <label for="signupName" class="form-label">Full Name</label>
+            <input
+              type="text"
+              id="signupName"
+              name="fullName"
+              class="input"
+              placeholder="Your full name"
+              required
+            />
+            <label for="signupEmail" class="form-label">Email</label>
+            <input
+              type="email"
+              id="signupEmail"
+              name="email"
+              class="input"
+              placeholder="you@example.com"
+              required
+            />
+            <label for="signupPassword" class="form-label">Password</label>
+            <input
+              type="password"
+              id="signupPassword"
+              name="password"
+              class="input"
+              placeholder="Minimum 6 characters"
+              minlength="6"
+              required
+            />
+            <button type="submit" class="btn btn-primary full-width">Create Account</button>
+            <p class="form-hint small">
+              Passwords are encrypted and never stored in plain text.
+            </p>
+            <p id="signupMessage" class="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
+
